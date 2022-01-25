@@ -1,0 +1,38 @@
+#profile-container div.factoids {
+    display: flex;
+    column-gap: 10px;
+    margin-bottom: 10px;
+}
+
+button#change-photo-btn {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: -50px;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    padding: 0;
+    overflow: hidden;
+}
+button#change-photo-btn > img {
+    height: 100%;
+    width: auto;
+}
+button#change-photo-btn > div.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+button#change-photo-btn:hover > div.overlay {
+    opacity: 0.3;
+}

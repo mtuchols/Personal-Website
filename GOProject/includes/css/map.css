@@ -1,0 +1,44 @@
+div#content-wrapper {
+    overflow: hidden;
+}
+div#map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+div#location-search {
+    max-width: 500px;
+    position: absolute;
+    bottom: 20px;
+}
+
+.customMarker {
+    position: absolute;
+    cursor: pointer;
+    background: #424242;
+    width: 100px;
+    height: 100px;
+    margin-left: -50px;
+    margin-top: -110px;
+    border-radius: 50%;
+    padding: 0px;
+}
+.customMarker:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 40px;
+    border-width: 11px 10px 0;
+    border-style: solid;
+    border-color: #424242 transparent;
+    display: block;
+    width: 0;
+}
+.customMarker img {
+    width: 90px;
+    height: 90px;
+    margin: 5px;
+    border-radius: 50%;
+}

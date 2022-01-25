@@ -1,0 +1,62 @@
+.post-header {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    color: inherit !important;
+}
+.post-header > div {
+    line-height: 18px;
+}
+.post-header p {
+    margin: 0;
+}
+.post-header p:first-child {
+    font-size: 18px;
+    font-weight: 500;
+}
+a.post-header:hover p:first-child {
+    text-decoration: underline;
+}
+.post-header p:last-child {
+    font-size: 14px;
+}
+p.post-content {
+    font-size: 24px;
+}
+
+div.post-actions {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+div.post-actions button {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    border: none;
+    background: none;
+    transition: color 0.3s ease;
+}
+div.post-actions button i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: background 0.3s ease;
+}
+div.post-actions button.post-reply:hover {
+    color: #18de18;
+}
+div.post-actions button.post-reply:hover i {
+    background: rgba(24, 222, 24, 0.1);
+}
+div.post-actions button.post-like.liked, div.post-actions button.post-like:hover {
+    color: #c92672;
+}
+div.post-actions button.post-like:hover i {
+    background: rgba(201, 38, 114, 0.1);
+}

@@ -1,0 +1,13 @@
+BASIC SETUP INSTRUCTIONS FOR G-O:
+
+Open Git Bash or terminal.
+
+Change the current working directory to the location where you want the cloned directory.
+
+Type git clone, and then paste https://github.com/cdm126/GOProject.git
+
+Using commandline, type PHP -S localHost:8000 or use another host of your choice.
+
+Go to your internet browser, and type localHost:8000
+
+This will bring you to our launch page, make an account through the sign up button and enjoy! 

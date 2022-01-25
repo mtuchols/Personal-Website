@@ -97,7 +97,7 @@ audio,canvas,video {
 	*display:inline;
 	*zoom: 1;
 }
-* Remove excess height in iOS 5 devices. */
+/* Remove excess height in iOS 5 devices. */
 audio:not([controls]) {
 	display:none;
 	height:0;
@@ -1127,6 +1127,24 @@ ul.slides li {
 	height: 100%;
 }
 /* ==========================================================================Responsive========================================================================== */
+/* Folded Phone */
+@media screen and (max-width:280px) {
+	.scrollto {
+		padding: 95px 0px 0px 0px;
+	}
+
+	.hero h1 {
+		font-size: 50px;
+		line-height: 80px;
+		margin-top: 65px;
+	}
+
+	.glow {
+		font-size: 50px;
+		letter-spacing: -5px;
+	}
+}
+
 /* 320px (iPhone) */
 @media screen and (max-width:414px) {
 	.scrollto {
@@ -1134,16 +1152,31 @@ ul.slides li {
 	}
 
 	.hero h1 {
-		font-size: 100px;
+		font-size: 65px;
 		line-height: 80px;
 		margin-top: 65px;
-}
+	}
+
+	.glow {
+		font-size: 65px;
+		letter-spacing: -5px;
+	}
 }
 /* 480px (WVGA - Low End Windows Phone) */
 @media screen and (max-width:480px) {
 	.wrapper {
 		background:#f3f5f8;
 		height:640px;
+	}
+	.glow {
+		font-size: 65px;
+		letter-spacing: -5px;
+	  }
+
+	.hero h1 {
+		font-size: 65px;
+		letter-spacing: -5px;
+		margin-top: 65px;
 	}
 	.iphone {
 		display:none;
@@ -1153,6 +1186,30 @@ ul.slides li {
 	}
 	.wp2,.wp4,.wp5,.light-box {
 		margin-bottom: 30px;
+	}
+}
+
+/* Surface Duo */
+@media screen and (max-width:1024px) {
+
+	.glow {
+		font-size: 65px;
+		letter-spacing: -5px;
+	  }
+
+	.hero h1 {
+		font-size: 65px;
+		letter-spacing: -5px;
+		margin-top: 65px;
+	}
+	.wp3 {
+		background-position:50px 0;
+	}
+	.swag {
+		background-attachment:scroll;
+	}
+	.subscribe {
+		background-attachment: scroll;
 	}
 }
 /* xGA iPad */
